@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-position {
+    left: 0.75rem !important;
+    bottom: 0.5rem !important;
+  }
+}
+
+.navItems {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none; 
+  color: inherit; 
+  z-index: 10 !important;
+}
+
+.navItems::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0; 
+  height: 2px;
+  width: 0; 
+  background-color: red; 
+  transition: width 0.5s ease-in-out;
+}
+
+.navItems:hover::after {
+  width: 100%; 
+}
+
+.contactMe {
+  background-color: #161a20;
+  padding: 1em 2em;
+  border: none;
+  color: #f0f0f0;
+  border-radius: 1000px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactMe::after {
+  content: '';
+  position: absolute;
+  height: 107%;
+  width: 102%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  z-index: -1;
+}
+
+.contactMe:hover {
+  z-index: 0;
+  box-shadow: 40px 0 100px #008cff60, -40px 0 100px #e100ff48;
+  /* color: black; */
+}
+
+.resumeButton {
+  padding: 1em 2em;
+  border: none;
+  color: #f0f0f0;
+  border-radius: 100px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black; 
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.resumeButton::after, .resumeButton::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 105%;
+  background-image: conic-gradient(from var(--angle),transparent 50%, blue);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 28px 0;
+  border-radius: 100px;
+  animation: 6s spin linear infinite;
+}
+
+.resumeButton::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg
+  }
+}
+
+
+
+.contact {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-direction: row; /* Default direction */
+
+  /* Responsive adjustments for mobile devices */
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
+
+.contact .textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+}
+
+.contact .textContainer h1 {
+  font-size: 100px;
+  line-height: 88px;
+  font-weight: 800;
+  
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+}
+
+.contact .textContainer span {
+  font-weight: 300;
+}
+
+.contact .formContainer {
+  flex: 1;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 50px;
+    width: 100%;
+  }
+}
+
+.contact .formContainer .phoneSvg {
+  stroke: orange;
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+}
+
+.contact .formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact .formContainer form input,
+.contact .formContainer form textarea {
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+
+.contact .formContainer form button {
+  padding: 20px;
+  border: none;
+  background-color: orange;
+  cursor: pointer;
+  font-weight: 500;
+  color: black;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none; /* Ensures the cursor doesn't block interactions */
+
+  @media (max-width: 768px) {
+      display: none;
+  }
+}
