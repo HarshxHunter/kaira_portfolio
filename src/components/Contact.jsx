@@ -7,6 +7,8 @@ import { IoMdCall } from "react-icons/io";
 
 const Contact = () => {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const [error, setError] = useState(false);
+    const [success, setSuccess] = useState(false);
 
     const handleOpenDialog = () => {
         setIsDialogOpen(true);
@@ -14,6 +16,8 @@ const Contact = () => {
 
     const handleCloseDialog = () => {
         setIsDialogOpen(false);
+        setSuccess(false);
+        setError(false);
     };
 
     return (
@@ -35,11 +39,11 @@ const Contact = () => {
                             <div className="flex flex-col sm:flex-row gap-0 sm:gap-4 items-center sm:items-start">
                                 <div className="flex gap-1 items-center">
                                     <SiGmail className="text-lg mt-1.5" />
-                                    <p className="text-sm md:text-base mt-2">kairaharsh793@gmail.com</p>
+                                    <p className="text-sm md:text-base mt-2 font-semibold">kairaharsh793@gmail.com</p>
                                 </div>
                                 <div className="flex gap-1 items-center">
                                     <IoMdCall className="text-lg mt-1.5 font-bold" />
-                                    <p className="text-sm md:text-base mt-2">+91 7042977049</p>
+                                    <p className="text-sm md:text-base mt-2 font-semibold">+91 7042977049</p>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +59,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            {isDialogOpen && <ContactDialog handleCloseDialog={handleCloseDialog} />}
+            {isDialogOpen && <ContactDialog handleCloseDialog={handleCloseDialog} setSuccess={setSuccess} setError={setError} success={success} error={error} />}
         </div>
 
     );

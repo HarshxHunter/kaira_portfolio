@@ -86,6 +86,7 @@ export default function Header() {
                     >
                         <p className="font-semibold">Contact</p>
                     </motion.li>
+
                 </ul>
             </nav>
         </header>
