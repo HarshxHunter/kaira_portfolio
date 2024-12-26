@@ -24,13 +24,16 @@ const App = () => {
         </div>
       </div>
 
-      
-      <div className='container mx-auto px-10 pt-10 bg-neutral-950'>
-        <Skills />
-        <Projects />
-        <Experience />
-        <Contact />
+
+      <div className='w-full bg-neutral-950 px-10 pt-10'>
+        <div className='max-w-screen-xl mx-auto'>
+          <Skills />
+          <Projects />
+          <Experience />
+          <Contact />
+        </div>
       </div>
+
 
       <Footer />
     </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/kevinRushProfile.png";
 import brushStroke from "../assets/brush.png";
 import { delay, motion } from 'framer-motion';
