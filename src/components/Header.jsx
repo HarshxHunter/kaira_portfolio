@@ -18,6 +18,16 @@ export default function Header() {
         };
     }, []);
 
+     const handleContact = () => {
+        // Programmatically scroll to the contact section
+        scroller.scrollTo("contact", {
+            smooth: true, // Enable smooth scrolling
+            duration: 500, // Duration of the scroll
+            offset: -100, // Offset for the scroll position
+        });
+        setActiveSection("contact");
+    };
+
     return (
         <header className="z-[900] relative">
             <motion.div
@@ -66,6 +76,16 @@ export default function Header() {
                             </ScrollLink>
                         </motion.li>
                     ))}
+
+                    <motion.li
+                        className="h-3/4 flex items-center justify-center relative cursor-pointer px-3 bg-white rounded-full text-black contactHeader"
+                        key="contact"
+                        initial={{ y: -100, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        onClick={handleContact}
+                    >
+                        <p className="font-semibold">Contact</p>
+                    </motion.li>
                 </ul>
             </nav>
         </header>

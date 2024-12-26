@@ -8,7 +8,7 @@ const Projects = () => {
   
   return (
     <section id="projects" className='px-10 scroll-mt-24'>
-      <div className='border-b border-neutral-900 pb-4'>
+      <div className=' pb-4'>
 
         <motion.h2
         whileInView={{ opacity: 1, y: 0}}

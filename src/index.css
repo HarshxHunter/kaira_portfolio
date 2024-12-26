@@ -50,6 +50,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* Add smooth transitions */
+  transition: box-shadow 0.5s ease, color 0.5s ease, z-index 0.5s ease;
 }
 
 .contactMe::after {
@@ -60,13 +63,71 @@
   border-radius: 1000px;
   background-image: linear-gradient(to bottom right, #008cff, #e100ff);
   z-index: -1;
+
+  /* Add smooth transition for pseudo-element appearance */
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .contactMe:hover {
   z-index: 0;
   box-shadow: 40px 0 100px #008cff60, -40px 0 100px #e100ff48;
   /* color: black; */
+
+  /* Add smooth transitions for hover state */
+  transition: box-shadow 0.5s ease, color 0.5s ease, z-index 0.5s ease;
 }
+
+.contactMe:hover::after {
+  /* Enhance pseudo-element transition for a smoother hover effect */
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+
+
+.contactHeader {
+  background-color: #161a20;
+  border: none;
+  color: #6b7280;
+  border-radius: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Add smooth transitions */
+  transition: box-shadow 0.5s ease, color 0.5s ease, z-index 0.5s ease;
+}
+
+.contactHeader::after {
+  content: '';
+  position: absolute;
+  height: 107%;
+  width: 102%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom, #f59208, #2bea0a);
+  z-index: -1;
+
+  /* Add smooth transition for pseudo-element appearance */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contactHeader:hover {
+  z-index: 0;
+  box-shadow: 40px 0 100px #008cff60, -40px 0 100px #e100ff48;
+  color: #f0f0f0;
+
+  /* Add hover effects to make transitions smoother */
+  transition: box-shadow 0.5s ease, color 0.5s ease, z-index 0.5s ease;
+}
+
+.contactHeader:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
 
 .resumeButton {
   padding: 1em 2em;
