@@ -1,5 +1,6 @@
 import React from 'react';
-import profilePic from "../assets/kevinRushProfile.png";
+// import profilePic from "../assets/kevinRushProfile.png";
+import profilePic from "../assets/heroImg.jpg";
 import brushStroke from "../assets/brush.png";
 import { delay, motion } from 'framer-motion';
 import { IoMdArrowForward } from "react-icons/io";
@@ -76,7 +77,7 @@ const Hero = () => {
                             animate="visible"
                             className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text 
                             text-4xl tracking-tight text-transparent'>
-                            Frontend Developer
+                            Software Developer
                         </motion.span>
                         <motion.p
                             variants={container(1)}
@@ -84,7 +85,7 @@ const Hero = () => {
                             animate="visible"
                             className='my-2 max-w-xl py-6 font-light tracking-tighter'>
                             {/* {HERO_CONTENT} */}
-                            Dedicated Frontend Developer with 1+ year of hands-on experience in designing and implementing responsive and dynamic web applications while using modern frontend technologies with best practises.
+                            Dedicated Software Developer with 2+ year of hands-on experience in designing and implementing responsive and dynamic web applications while using modern frontend technologies with best practises.
                         </motion.p>
 
                         <motion.div
@@ -98,7 +99,7 @@ const Hero = () => {
                             </button>
 
                             <a
-                                href="/Harsh_Resume.pdf"
+                                href="/Harsh_Singh_Kaira_1.pdf"
                                 download="Harsh_Kaira_Resume.pdf"
                                 className='bg-orange-200 hover:bg-orange-300 hover:shadow-[0px_4px_8px_rgba(255,255,255,0.4)] py-2 px-4 rounded-full text-black text-sm flex justify-center items-center gap-1 font-semibold transition-all duration-300'
                             >
@@ -167,12 +168,14 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='w-full lg:w-1/2 lg:p-8'>
-                    <div className='flex justify-center'>
+                    <div className='flex justify-end'>
                         <motion.img
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 1.2 }}
-                            src={profilePic} alt="Harsh Singh Kaira" />
+                            src={profilePic} alt="Harsh Singh Kaira" 
+                            className='rounded-xl h-[450px] w-full object-cover shadow-lg'
+                            />
                     </div>
                 </div>
             </div>

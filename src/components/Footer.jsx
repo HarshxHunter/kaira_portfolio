@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='container py-4 pt-1 lg:pt-2 lg:py-2 px-5 md:px-8'>
                 <div className='border-t border-white/15 py-6 text-sm flex flex-col md:flex-row justify-between items-center gap-8'>
                     <div className='text-white/40'>
-                        &copy; 2024. All rights reserved.
+                        &copy; 2026. All rights reserved.
                     </div>
                     <div className="py-4 flex items-center justify-center gap-4 text-4xl">
                         <div

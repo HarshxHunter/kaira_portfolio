@@ -21,6 +21,7 @@ import sublime from "../assets/skills/sublime.svg";
 import mongoosejs from "../assets/skills/Mongoosejs.svg";
 import firebase from "../assets/skills/firebase.svg";
 import cpp from "../assets/skills/CPP.png";
+import java from "../assets/skills/JavaIcon.png";
 import intellij from "../assets/skills/IntelliJ_IDEA.png";
 import figma from "../assets/skills/figma.svg";
 import postman from "../assets/skills/Postman.svg";
@@ -66,40 +67,69 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+ {
+  title: "SecurePay Payin Portal",
+  liveLink: "https://uat.securepay.co/",
+  image: project1,
+  description:
+    "Developed a scalable Payin portal for admins and merchants with role-based access control, merchant onboarding, payment integrations, risk and velocity management, QR generation, bank configuration, and Soundbox merchant onboarding workflows.",
+  tags: ["NextJs", "ReactJS", "MUI", "HTML", "TailwindCSS", "AWS", "Axios", "CSS", "Redux", "Figma", "React Hook Form", "JavaScript", "Git", "BitBucket", "Postman", "VS Code"],
+  },
   {
-    title: "Edublock",
+    title: "SecurePay Payout Portal",
+    liveLink: "https://uatpayout.securepay.co/",
     image: project1,
     description:
-      "EduBlock connects institutions, students, employers via blockchain. Enables certificate issuance, verification.Institutions manage departments, user roles, invitations, payment policies. Admins handle users, passwords. Graduates receive, employers verify certificates. ",
+      "Built a secure Payout portal for admins and merchants featuring role-based access control, merchant onboarding, payout integrations, beneficiary management, internal fund transfers, and bulk and single payout workflows with scalable dashboard interfaces.",
+    tags: ["NextJs", "ReactJS", "Shadcn", "HTML", "CSS", "TailwindCSS", "Zustand", "AWS", "React Hook From", "Zod", "TypeScript", "Figma", "Git", "BitBucket", "Postman", "VS Code"],
+  },
+  {
+    title: "SecurePay Website",
+    liveLink: "https://www.securepay.co/",
+    image: project1,
+    description:
+      "Developed a fully responsive fintech company website from scratch with modern UI/UX, interactive animations, reusable layouts, data visualizations, dynamic sections, and core business pages focused on performance, scalability, and seamless user experience.",
+    tags: ["NextJs", "ReactJS", "Tailwind CSS", "Framer Motion", "HTML", "CSS", "Figma", "Git", "BitBucket", "Postman", "VS Code"],
+  },
+  {
+    title: "Edublock",
+    liveLink: "https://superadmin.edu-block.org/login",
+    image: project1,
+    description:
+      "EduBlock connects institutions, students, employers via blockchain. Enables certificate issuance, verification.Institutions manage departments, user roles, invitations, payment policies. Admins handle users, passwords. Graduates receive, employers verify certificates.",
     tags: ["NextJs", "Typescript", "Tailwind CSS", "MUI", "HTML", "CSS", "Redux", "Figma", "Git", "Gitlab", "Postman", "IntelliJ"],
   },
   {
     title: "Goldy Token",
+    liveLink: "https://testnet.goldytoken.com/",
     image: project2,
     description:
       "Goldy Token revolutionizes gold ownership by leveraging blockchain technology. It offers a secure, transparent, and easily tradable digital representation of gold, eliminating storage, security, and liquidity challenges. Each token is backed by physical gold bars, ensuring tangible value.",
-      tags: ["NextJs", "Typescript", "Tailwind CSS", "MUI", "HTML", "CSS", "Redux", "Figma", "Git", "Gitlab", "Postman", "IntelliJ"],
-    },
+    tags: ["NextJs", "Typescript", "Tailwind CSS", "MUI", "HTML", "CSS", "Redux", "Figma", "Git", "Gitlab", "Postman", "IntelliJ"],
+  },
   {
-    title: "Bucle Labs",
+    title: "Bucle Labs Website",
+    liveLink: "https://bucle.dev/",
     image: project3,
     description:
-      "Goldy Token revolutionizes gold ownership by leveraging blockchain technology. It offers a secure, transparent, and easily tradable digital representation of gold, eliminating storage, security, and liquidity challenges. Each token is backed by physical gold bars, ensuring tangible value.",
-      tags: ["NextJs", "Typescript", "GSAP", "Tailwind CSS", "MUI", "HTML", "CSS", "Context API", "Figma", "Git", "Gitlab", "Postman", "IntelliJ"],
-    },
+      "Developed and maintained a modern Web3 company website for a blockchain consultancy and software services firm, building responsive pages, dynamic UI sections, reusable components, blog experiences, and interactive layouts focused on performance, scalability, and seamless user experience across devices.",
+    tags: ["NextJs", "Typescript", "GSAP", "ThreeJs", "Tailwind CSS", "MUI", "HTML", "CSS", "Context API", "Figma", "Git", "Gitlab", "Postman", "IntelliJ"],
+  },
   {
     title: "Sociopedia",
+    liveLink: "https://sociopedia-for-sociopaths.netlify.app/",
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    tags: ["react","Javascript","mui","redux","dropzone","express","Node","mongodb","mongoose","jwt","multer","html","css","git","github","vscode"],
+    tags: ["React","Javascript","MUI","Redux","Dropzone","Express","Node","Mongodb","Mongoose","JWT","Multer","HTML","CSS","Git","Github","VScode"],
   },
   {
     title: "ECOMVISION",
+    liveLink: "https://admin-frontend-xpdv.onrender.com/",
     image: project5,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    tags: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Built a full-stack admin dashboard and analytics platform with responsive data visualizations, transaction management, customer insights, server-side pagination, interactive charts with dark and light modes.",
+    tags: ["React","Javascript","MUI","Redux","Lucid Chart & Nivo","Dropzone","Express","Node","Mongodb","Mongoose","JWT","Multer","HTML","CSS","Git","Github","VScode"],
   },
 ];
 
@@ -204,12 +234,12 @@ export const Backend_skill = [
     width: 55,
     height: 55,
   },
-  {
-    skill_name: "Firebase",
-    Image: firebase,
-    width: 55,
-    height: 55,
-  },
+  // {
+  //   skill_name: "Firebase",
+  //   Image: firebase,
+  //   width: 55,
+  //   height: 55,
+  // },
 ];
 
 export const Full_stack = [
@@ -243,11 +273,17 @@ export const Languages = [
     height: 80,
   },
   {
+    skill_name: "Java",
+    Image: java,
+    width: 60,
+    height: 60,
+  },
+  {
     skill_name: "C++",
     Image: cpp,
     width: 60,
     height: 60,
-  },
+  }
 ];
 
 export const SoftwareTools = [

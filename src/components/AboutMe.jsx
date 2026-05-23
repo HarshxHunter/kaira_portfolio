@@ -28,10 +28,18 @@ const AboutMe = () => {
                     transition={{ duration: 0.5 }}
                 className='w-full lg:w-1/2'>
                     <div className='flex justify-center lg:justify-start'>
-                        <p className='my-2 max-w-xl py-6'>
-                            I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.
-
-                            I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.
+                        <p className='my-2 max-w-xl py-6 text-neutral-300 leading-8'>
+                            I'm a Software Developer passionate about building scalable, high-performance, and user-focused web applications using{" "}
+                            <strong>Next.js</strong>, <strong>React.js</strong>, <strong>TypeScript</strong>, and modern frontend technologies.
+                            With experience working on production-grade fintech and SaaS platforms, I focus on creating clean,
+                            maintainable architectures, reusable component systems, and seamless user experiences that balance performance,
+                            scalability, and business requirements.
+                            <br />
+                            <br />
+                            I enjoy taking ownership of products from development to deployment, collaborating across cross-functional teams,
+                            and solving complex frontend challenges with efficient and reliable solutions. My expertise includes responsive UI
+                            development, state management, API integrations, authentication systems, and building scalable applications with a
+                            strong emphasis on code quality, reusability, and long-term maintainability.
                         </p>
                     </div>
 

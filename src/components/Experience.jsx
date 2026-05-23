@@ -3,6 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import logo from "../assets/ballzo.png";
 import bucleLogo from "../assets/bucle.png";
+import securePayLogo from "../assets/securepay_logo.jpg";
 import code from "../assets/codeIcon.png";
 import { motion } from 'framer-motion';
 
@@ -26,7 +27,58 @@ const Experience = () => {
                         // border: "1px solid rgba(250, 250, 250, 0.15)"
                     }}
                     contentArrowStyle={{ borderRight: '7px solid #12c59f' }}
-                    date="February 2024 - present"
+                    date="March 2025 - Present"
+                    iconStyle={{ background: 'grey', color: '#fff' }}
+                    icon={
+                        <div className='flex flex-col items-center justify-center'>
+                            <a href="https://www.securepay.co/" target="_blank" rel="noopener noreferrer">
+                                <motion.img className="mt-0 w-full rounded-full" src={securePayLogo} alt="logo" whileHover={{ scale: 1.1 }}
+                                    transition={{ duration: 0.3 }} />
+                            </a>
+                        </div>
+
+                    }
+                    shadowSize="small"
+                >
+                    <div className='border-[2px] border-[#12c59f] rounded-[16px] p-4 bg-[#0F1524] flex flex-col gap-4'>
+                        <h3 className="text-2xl font-bold">Software Developer</h3>
+                        <h4 className="text-lg font-semibold">SecurePay Pvt. Ltd.</h4>
+                        <ul className="space-y-2">
+                            <li className="flex items-start text-sm tracking-wide">
+                                <img
+                                    src={code}
+                                    alt="bullet"
+                                    className="w-4 h-4 mt-1 mr-2"
+                                />
+                                Led the end-to-end development of SecurePay's Payin and Payout portals, focusing on scalable architecture,
+                                secure integrations, and a seamless user experience.
+                            </li>
+                            <li className="flex items-start text-sm tracking-wide">
+                                <img
+                                    src={code}
+                                    alt="bullet"
+                                    className="w-4 h-4 mt-1 mr-2"
+                                />
+                                Built dynamic onboarding flows, reusable UI components, and integrated AWS-powered backend services.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </VerticalTimelineElement>
+
+
+                <VerticalTimelineElement
+                    contentStyle={{
+                        background: 'inherit',
+                        color: '#fff',
+                        boxShadow: 'none',
+                        padding: '0px',
+                        borderRadius: "16px"
+                        // border: "1px solid rgba(250, 250, 250, 0.15)"
+                    }}
+                    contentArrowStyle={{ borderRight: '7px solid #12c59f' }}
+                    date="February 2024 - October 2024"
                     iconStyle={{ background: 'grey', color: '#fff' }}
                     icon={
                         <div className='flex flex-col items-center justify-center'>
@@ -80,7 +132,7 @@ const Experience = () => {
                         // border: "1px solid rgba(250, 250, 250, 0.15)"
                     }}
                     contentArrowStyle={{ borderRight: '7px solid  #12c59f' }}
-                    date="February 2024 - present"
+                    date="October 2023 - December 2023"
                     iconStyle={{ background: 'grey', color: '#fff' }}
                     icon={
                         <div className='flex flex-col items-center justify-center'>
