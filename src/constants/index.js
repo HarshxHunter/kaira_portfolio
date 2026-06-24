@@ -1,4 +1,7 @@
 import project1 from "../assets/projects/edublock-brand.webp";
+import payin from "../assets/projects/payin.jpeg";
+import payout from "../assets/projects/payout.jpeg";
+import securepayWebsite from "../assets/projects/securepay_website.png";
 import project2 from "../assets/projects/goldy.webp";
 import project3 from "../assets/projects/bucle.png";
 import project4 from "../assets/projects/sociopedia.png";
@@ -70,7 +73,7 @@ export const PROJECTS = [
  {
   title: "SecurePay Payin Portal",
   liveLink: "https://uat.securepay.co/",
-  image: project1,
+  image: payin,
   description:
     "Developed a scalable Payin portal for admins and merchants with role-based access control, merchant onboarding, payment integrations, risk and velocity management, QR generation, bank configuration, and Soundbox merchant onboarding workflows.",
   tags: ["NextJs", "ReactJS", "MUI", "HTML", "TailwindCSS", "AWS", "Axios", "CSS", "Redux", "Figma", "React Hook Form", "JavaScript", "Git", "BitBucket", "Postman", "VS Code"],
@@ -78,7 +81,7 @@ export const PROJECTS = [
   {
     title: "SecurePay Payout Portal",
     liveLink: "https://uatpayout.securepay.co/",
-    image: project1,
+    image: payout,
     description:
       "Built a secure Payout portal for admins and merchants featuring role-based access control, merchant onboarding, payout integrations, beneficiary management, internal fund transfers, and bulk and single payout workflows with scalable dashboard interfaces.",
     tags: ["NextJs", "ReactJS", "Shadcn", "HTML", "CSS", "TailwindCSS", "Zustand", "AWS", "React Hook From", "Zod", "TypeScript", "Figma", "Git", "BitBucket", "Postman", "VS Code"],
@@ -86,7 +89,7 @@ export const PROJECTS = [
   {
     title: "SecurePay Website",
     liveLink: "https://www.securepay.co/",
-    image: project1,
+    image: securepayWebsite,
     description:
       "Developed a fully responsive fintech company website from scratch with modern UI/UX, interactive animations, reusable layouts, data visualizations, dynamic sections, and core business pages focused on performance, scalability, and seamless user experience.",
     tags: ["NextJs", "ReactJS", "Tailwind CSS", "Framer Motion", "HTML", "CSS", "Figma", "Git", "BitBucket", "Postman", "VS Code"],
