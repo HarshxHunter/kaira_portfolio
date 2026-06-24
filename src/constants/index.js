@@ -16,6 +16,7 @@ import reduxIcon from "../assets/skills/redux.svg";
 import tsIcon from "../assets/skills/typescript.svg";
 import nextIcon from "../assets/skills/nextjs.svg";
 import framerMotion from "../assets/skills/framer.png";
+import springBoot from "../assets/skills/spring-boot-icon.svg";
 import nodejs from "../assets/skills/nodejs-icon.svg";
 import express from "../assets/skills/expressjs.svg";
 import mongodb from "../assets/skills/mongoDB.svg";
@@ -32,6 +33,9 @@ import netlify from "../assets/skills/netlify.svg";
 import git from "../assets/skills/git-icon.svg";
 import github from "../assets/skills/github.svg";
 import gitlab from "../assets/skills/gitlab-icon.svg";
+import awsIcon from "../assets/skills/aws-icon.svg";
+import dockerIcon from "../assets/skills/docker-icon.svg";
+import jenkinsIcon from "../assets/skills/jenkins-icon.svg";
 import xeroOneAni from "../assets/skills/zeroone.webm";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
@@ -202,6 +206,12 @@ export const Frontend_skill = [
 
 export const Backend_skill = [
   {
+    skill_name: "Spring Boot",
+    Image: springBoot,
+    width: 80,
+    height: 80,
+  },
+  {
     skill_name: "Node js",
     Image: nodejs,
     width: 80,
@@ -247,19 +257,23 @@ export const Backend_skill = [
 
 export const Full_stack = [
   {
-    skill_name: "Docker",
-    Image: "/docker.svg",
+    skill_name: "AWS",
+    Image: awsIcon,
     width: 70,
     height: 70,
   },
-
   {
-    skill_name: "Figma",
-    Image: "/figma.png",
-    width: 50,
-    height: 50,
+    skill_name: "Docker",
+    Image: dockerIcon,
+    width: 70,
+    height: 70,
   },
-
+  {
+    skill_name: "Jenkins",
+    Image: jenkinsIcon,
+    width: 70,
+    height: 70,
+  },
 ];
 
 export const Languages = [
@@ -327,6 +341,8 @@ export const SoftwareTools = [
     height: 60,
   },
 ];
+
+
 
 export const lastOne = [
   {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Backend_skill, Frontend_skill, Languages, SoftwareTools } from '../constants';
+import { Backend_skill, Frontend_skill, Full_stack, Languages, SoftwareTools } from '../constants';
 import SkillDataProvider from './sub/SkillDataProvider';
 import videoSrc from "../assets/skills/cards-video.webm";
 
@@ -53,6 +53,18 @@ const Skills = () => {
 
         <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
             {Languages.map((item, index) => (
+                <SkillDataProvider 
+                    key={index}
+                    src={item.Image}
+                    width={item.width}
+                    height={item.height}
+                    index={index}
+                />
+            ))}
+        </div>
+
+        <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
+            {Full_stack.map((item, index) => (
                 <SkillDataProvider 
                     key={index}
                     src={item.Image}
